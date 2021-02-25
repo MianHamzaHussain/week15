@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Handling</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Condition </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="string.html">String</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="arrays.html">Array </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mathloop.html">Math&loop</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1 class="text-center">Array Handling</h1>
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Read and print</h4>
+          <h6 id="rresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="Enter number of elements u want to add in array"
+                id="re"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Read and print"
+                onclick="Read()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Print all - number elements</h4>
+          <h6 id="nuresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="Enter number of elements u want to add in array"
+                id="nue"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="print & add"
+                onclick="neg()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-success">Sum of all</h4>
+          <h6 id="suresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="Enter number of elements u want to add in array"
+                id="sue"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add to sum"
+                onclick="sum()"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class="text-center text-success">maximum and minimum</h4>
+          <h6 id="muresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="2"
+                placeholder=" Number of elements u want to add in array"
+                id="mue"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elements to find "
+                onclick="mm()"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- col-md-3-->
+      </div>
+      <!-- row 1 -->
+
+      <div class="row">
+        <div class="col-md-3">
+          <h4 class="text-center text-success">second largest number</h4>
+          <h6 id="slresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="2"
+                placeholder=" Number of elements u want to add in array"
+                id="sl"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elements to find "
+                onclick="second()"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- col-md-3-->
+        <div class="col-md-3">
+          <h4 class="text-center text-success">count even odd</h4>
+          <h6 id="eoresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements u want to add in array"
+                id="eo"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elements to find "
+                onclick="ceo()"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- col-md-3-->
+        <div class="col-md-3">
+          <h4 class="text-center text-success">count negative numbers</h4>
+          <h6 id="cnresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements u want to add in array"
+                id="cn"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elements to find "
+                onclick="cne()"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- col-md-3-->
+        <div class="col-md-3">
+          <h4 class="text-center text-success">copy array 1 to array 2</h4>
+          <h6 id="aresult" class="text-center text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder="array 1 elements u wan add"
+                id="a1"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                min="1"
+                placeholder=" Number of elements u want to add in array"
+                id="a2"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="add elements to copy "
+                onclick="copya()"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- col-md-3-->
+      </div>
+      <!--row 2-->
+      <div class="row">
+        <div class="col-md-12">
+          <h6 id="addresult" class="text-center text-danger"></h6>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="text-center text-success">Add elements</h4>
+
+              <form>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Enter value"
+                    id="addele"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="button"
+                    class="btn btn-primary"
+                    value="add element "
+                    onclick="adde()"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <h4 class="text-center text-success">Remove elements</h4>
+
+              <form>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="number"
+                    min="0"
+                    placeholder="Enter Index to remove"
+                    id="eindex"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="button"
+                    class="btn btn-danger"
+                    value="delete "
+                    onclick="reme()"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--row3-->
+    </div>
+    <!-- container -->
+  </body>
+  <script src="js/arra.js"></script>
+</html>

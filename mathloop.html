@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 15- Week15</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Condition </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="string.html">String</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="arrays.html">Array </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="mathloop.html">Math&loop</a>
+      </li>
+    </ul>
+  </nav>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Math funtions</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Math Round user defined</h4>
+          <h6 id="rresult" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Enter value"
+                id="rond"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Round "
+                onclick="Round()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Math Ceil user defined</h4>
+          <h6 id="cresult" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Enter value"
+                id="cil"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Ceil "
+                onclick="Ceil()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">Math Floor user defined</h4>
+          <h6 id="fresult" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Enter value"
+                id="flor"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Floor "
+                onclick="Floor()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h4 class="text-center">Loop Functions</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-center text-success">All natural numbers to n</h4>
+          <h6 id="nresult" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter Limit"
+                id="nl"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Get natural to n "
+                onclick="Naturual()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">
+            All natural numbers from n to 1
+          </h4>
+          <h6 id="nresult2" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter where u want start"
+                id="nl2"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Natural from n to 1 "
+                onclick="Naturual2()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">All caharcters from a to z</h4>
+          <h6 id="chresult" class="text-danger"></h6>
+          <form>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Characters  a to z "
+                onclick="printch()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-center text-success">
+            all even numbers between 1 to 100
+          </h4>
+
+          <form>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Even  between 1 and 100"
+                onclick="even()"
+              />
+            </div>
+            <div id="eresult"></div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-center text-success">
+            all odd numbers between 1 to 100
+          </h4>
+
+          <form>
+            <div class="form-group">
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="Odd  between 1 and 100"
+                onclick="odd()"
+              />
+            </div>
+            <div id="oresult"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/mathloop.js"></script>
+  </body>
+</html>
